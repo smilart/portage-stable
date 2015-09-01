@@ -4,7 +4,7 @@
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (27 Jul 2012)
 # Modular X: Build the Xorg X server by default
-x11-base/xorg-server xorg
+x11-base/xorg-server xorg glamor
 
 # Diego Elio Pettenò <flameeyes@gentoo.org> (11 Apr 2011)
 # Disable ldap support by default in sudo, as it seem to lack
@@ -21,3 +21,8 @@ app-admin/sudo -ldap
 # Bug #295615 - Disable cxx by default, in order to avoid a die
 # in pkg_setup with default USE settings (cxx requires sasl).
 net-nds/openldap -cxx
+
+
+media-libs/mesa xa
+x11-libs/libdrm libkms
+x11-drivers/xf86-video-intel -sna
