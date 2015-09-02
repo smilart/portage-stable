@@ -25,4 +25,4 @@ net-nds/openldap -cxx
 
 media-libs/mesa xa
 x11-libs/libdrm libkms
-x11-drivers/xf86-video-intel -sna
+x11-drivers/xf86-video-intel -sna uax
