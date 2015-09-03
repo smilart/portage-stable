@@ -38,6 +38,12 @@ DEPEND="${RDEPEND}
 	x11-proto/presentproto
 	x11-proto/resourceproto"
 
+src_prepare() {
+    epatch ${FILESDIR}/xf86-video-intel-2.99.917-sna-udev-fstat.patch
+    epatch ${FILESDIR}/xf86-video-intel-2.99.917-uxa-udev-fstat.patch
+    xorg-2_src_prepare
+}
+
 src_configure() {
 	XORG_CONFIGURE_OPTIONS=(
 		$(use_enable debug)
